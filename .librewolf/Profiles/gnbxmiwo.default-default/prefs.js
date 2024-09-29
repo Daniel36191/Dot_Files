@@ -20,6 +20,7 @@ user_pref("browser.bookmarks.restore_default_bookmarks", false);
 user_pref("browser.contentblocking.category", "strict");
 user_pref("browser.dom.window.dump.enabled", false);
 user_pref("browser.download.dir", "/home/daniel/Downloads");
+user_pref("browser.download.lastDir", "/home/daniel/dotfiles");
 user_pref("browser.download.panel.shown", true);
 user_pref("browser.download.save_converter_index", 0);
 user_pref("browser.download.viewableInternally.typeWasRegistered.avif", true);
