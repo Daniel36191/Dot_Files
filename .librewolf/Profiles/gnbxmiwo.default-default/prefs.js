@@ -89,7 +89,6 @@ user_pref("devtools.responsive.viewport.pixelRatio", 1);
 user_pref("devtools.responsive.viewport.width", 1528);
 user_pref("devtools.selfxss.count", 5);
 user_pref("devtools.toolbox.footer.height", 673);
-user_pref("devtools.toolbox.selectedTool", "netmonitor");
 user_pref("devtools.toolbox.splitconsole.open", true);
 user_pref("devtools.toolbox.splitconsoleEnabled", true);
 user_pref("devtools.toolbox.splitconsoleHeight", 223);
