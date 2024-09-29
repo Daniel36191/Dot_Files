@@ -102,7 +102,7 @@ user_pref("distribution.nixos.bookmarksProcessed", true);
 user_pref("doh-rollout.provider-list", "[{\"UIName\":\"Mozilla Cloudflare\",\"uri\":\"https://mozilla.cloudflare-dns.com/dns-query\"},{\"UIName\":\"Quad9\",\"uri\":\"https://dns.quad9.net/dns-query\"},{\"UIName\":\"Quad9+ECS\",\"uri\":\"https://dns11.quad9.net/dns-query\"}]");
 user_pref("dom.forms.autocomplete.formautofill", true);
 user_pref("dom.private-attribution.submission.enabled", false);
-user_pref("dom.push.userAgentID", "edba906b31bf43fa86b5188969c55eec");
+user_pref("dom.push.userAgentID", "3b6ecaab10e5481d83ac16b6736ff0ad");
 user_pref("dom.security.https_only_mode", false);
 user_pref("dom.security.https_only_mode_ever_enabled", true);
 user_pref("extensions.activeThemeID", "firefox-compact-dark@mozilla.org");
