@@ -11,7 +11,7 @@
 
 user_pref("accessibility.typeaheadfind.flashBar", 0);
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1727638797);
-user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1727645997);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1727649597);
 user_pref("app.update.lastUpdateTime.services-settings-poll-changes", 1727638797);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1727638797);
 user_pref("browser.bookmarks.defaultLocation", "jW2Cq4cO1EJv");

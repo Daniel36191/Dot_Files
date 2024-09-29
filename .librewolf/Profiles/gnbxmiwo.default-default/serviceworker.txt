@@ -23,3 +23,15 @@ true
 1
 true
 #
+
+https://www.aliexpress.us/
+https://www.aliexpress.us/sw.js?version=0.0.62
+true
+{f41cffbb-716a-4653-a410-9495822642ab}
+0
+1727649253165774
+1727649253166295
+1727649252689712
+0
+true
+#
