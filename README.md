@@ -11,4 +11,4 @@ Install with git to home folder
 git clone
 ./update_git.sh
 ```
-    
+Don't forget to move .nixs/s to /etc/nixos/
