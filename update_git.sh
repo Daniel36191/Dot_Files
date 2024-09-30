@@ -1,42 +1,33 @@
-# Prompt for backing up Nix configurations
-read -p "Backup Nix cfg/s (y/n)? " yn
+# Prompt for uploading dotfiles
+read -p "Would you like to upload dotfiles? (y/n): " yn
 
 case $yn in 
     [yY] ) 
-        echo "Backing up Nix configurations..."
-        sudo cp -fr /etc/nixos/ ./
-        echo "Backup completed."
-        ;;
-    [nN] ) 
-        echo "No backup taken."
-        ;;
-    * ) 
-        echo "Invalid response. Exiting."
-        exit 1
-        ;;
-esac
-
-read -p "Upload dot/s (y/n)? " yn2
-
-case $yn2 in 
-    [yY] ) 
         echo "Uploading to git..."
-# Use GNU Stow to symlink dotfiles
-stow .
-
-# Prompt for commit message
-echo "Commit Name:"
-read commit_name
-
-# Add changes to Git
-git add .
-
-# Commit with the provided message
-git commit -m "$commit_name"
-
-# Push to the master branch
-git push origin master
-        echo "Upload completed!"
+        
+        # Use GNU Stow to symlink dotfiles
+        if stow .; then
+            # Prompt for commit message
+            echo "Commit message:"
+            read commit_name
+            
+            # Add changes to Git
+            git add .
+            
+            # Commit with the provided message
+            if git commit -m "$commit_name"; then
+                # Push to the master branch
+                if git push origin master; then
+                    echo "Upload completed!"
+                else
+                    echo "Error pushing to Git."
+                fi
+            else
+                echo "Error during commit."
+            fi
+        else
+            echo "Error during stow operation."
+        fi
         ;;
     [nN] ) 
         echo "No upload done."
