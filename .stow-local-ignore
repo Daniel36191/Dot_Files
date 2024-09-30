@@ -23,7 +23,7 @@ _darcs
 ^/COPYING
 
 # Ignore the new script
-update_dotfiles.sh
+update_git.sh
 
 # Ignore nix configs
 /nixos
