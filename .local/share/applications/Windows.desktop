@@ -1,6 +1,5 @@
 [Desktop Entry]
 Type=Application
 Name=Windows Reboot
-Exec=bash -c winreboot
+Exec=/home/daniel/.local/share/applications/reboot.sh
 Terminal=true
-Categories=Utility
