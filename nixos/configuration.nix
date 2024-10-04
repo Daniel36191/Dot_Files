@@ -44,13 +44,28 @@ services.xserver.videoDrivers = ["nvidia"];
 hardware.nvidia.modesetting.enable = true;
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
+  boot.loader.grub = {
+    enable = true;
+    timeout = 1;
+    useOSProber = true;
+    efiSupport = true;
+    device = "nodev";
+  };
   boot.loader.efi.canTouchEfiVariables = true;
   boot.supportedFilesystems = ["ext4" "exfat" "f2fs" "fat32" "ntfs" ];
 
   #Security
   security.polkit.enable = true;
   security.rtkit.enable = true;
+#Add exception for grub reboot for windwos reboot command in rofi
+  security.sudo.extraRules = [
+    { users = [ "daniel" ];
+      commands = [
+        { command = "${pkgs.grub2}/bin/grub-reboot"; options = [ "NOPASSWD" ]; }
+        { command = "${pkgs.systemd}/bin/systemctl reboot"; options = [ "NOPASSWD" ]; }
+      ];
+    }
+  ];
 
   systemd = {
   user.services.polkit-gnome-authentication-agent-1 = {
@@ -89,6 +104,7 @@ services.pipewire = {
 
   # Set your time zone.
   time.timeZone = "America/New_York";
+  time.hardwareClockInLocalTime = true;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";

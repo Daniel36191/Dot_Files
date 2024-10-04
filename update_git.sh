@@ -1,3 +1,10 @@
+read -p "Copy Nixos Configs? (y/n): " yn1
+
+case $yn1 in 
+	[yY] ) sudo cp -rf /etc/nixos/. ~/dotfiles/nixos
+esac
+
+
 # Prompt for uploading dotfiles
 read -p "Would you like to upload dotfiles? (y/n): " yn
 

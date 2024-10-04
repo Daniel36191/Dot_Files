@@ -1,8 +1,11 @@
 { config, pkgs, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
+#Root Apps
+grub2
 polkit
 polkit_gnome
+
 #System_Apps
 rofi
 kitty
