@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Windows
+Name=Windows Reboot
 Exec=bash -c winreboot
 Terminal=true
 Categories=Utility
