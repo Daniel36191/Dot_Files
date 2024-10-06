@@ -9,7 +9,7 @@
     [
       ./hardware-configuration.nix
       ./apps.nix
-      #./vm.nix #Virtual machines
+      ./vm.nix #Virtual machines
     ];
 
 #Flakes
@@ -46,11 +46,17 @@ hardware.nvidia.modesetting.enable = true;
   # Bootloader.
   boot.loader.grub = {
     enable = true;
-    timeout = 1;
     useOSProber = true;
     efiSupport = true;
     device = "nodev";
+    extraEntries = ''
+  menuentry "Windows Boot Manager" {
+      search --no-floppy --fs-uuid --set=root 01DA383CA1F608A0
+      chainloader +1
+  }
+'';
   };
+  boot.loader.timeout = 1;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.supportedFilesystems = ["ext4" "exfat" "f2fs" "fat32" "ntfs" ];
 

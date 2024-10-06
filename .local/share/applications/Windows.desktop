@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Windows Reboot
-Exec=pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY grub-reboot "Windows Boot Manager (on /dev/sdc1)" && reboot
+Exec=pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY grub-reboot "Windows Boot Manager" && reboot
 Terminal=false
 Categories=Utility

@@ -54,6 +54,9 @@ librewolf
 ytfzf #youtube cli
 gimp
 xournalpp
+obs-studio
+vlc
+video-trimmer
 
 #Games
 protonup #Steam_Apps
