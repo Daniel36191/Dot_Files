@@ -9,7 +9,7 @@
     [
       ./hardware-configuration.nix
       ./apps.nix
-      ./vm.nix #Virtual machines
+      #./vm.nix #Virtual machines
     ];
 
 #Flakes
@@ -51,8 +51,15 @@ hardware.nvidia.modesetting.enable = true;
     device = "nodev";
     extraEntries = ''
   menuentry "Windows Boot Manager" {
-      search --no-floppy --fs-uuid --set=root 01DA383CA1F608A0
-      chainloader +1
+    insmod part_gpt
+    insmod fat
+    set root='hd0,gpt1'
+    if [ x$feature_platform_search_hint = xy ]; then
+     search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt1 --hint-efi=hd0,gpt1 --hint-baremetal=ahci0,gpt1  82AC-4EE9
+    else
+     search --no-floppy --fs-uuid --set=root 82AC-4EE9
+    fi
+    chainloader /EFI/Microsoft/Boot/bootmgfw.efi
   }
 '';
   };
