@@ -7,6 +7,8 @@ sudo cp -fr ./nixos/ /etc/
 echo "Copied"
 echo "Rebuilding"
 sudo nixos-rebuild switch --flake /etc/nixos#default
+#permissions for new user
+sudo chown -R daniel /etc/nixos
 echo "Cleaning"
 sudo nix-collect-garbage -d
 echo "Done... Applying"

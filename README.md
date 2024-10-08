@@ -5,6 +5,15 @@
 
 ## Installation
 
+Add These lines to current nix config
+```nix
+#Flatpacks
+  services.flatpak.enable = true;
+environment.systemPackages = with pkgs; [
+    stow
+    git
+    ];
+```
 Install with git to home folder
 
 ```bash
