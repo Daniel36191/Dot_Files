@@ -46,7 +46,8 @@
             "active": "",
             "empty": "",
             "default": "",
-            "special": ""
+            "discord": "",
+            "sound": ""
         }
     },
     "disk": {
