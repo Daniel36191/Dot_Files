@@ -24,6 +24,7 @@ _darcs
 
 # Ignore the new script
 update_git.sh
+install.sh
 
 # Ignore nix configs
 /nixos
