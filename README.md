@@ -9,6 +9,7 @@ Add These lines to current nix config
 ```nix
 #Flatpacks
   services.flatpak.enable = true;
+  xdg.portal.wlr.enable = true;
 environment.systemPackages = with pkgs; [
     stow
     git
