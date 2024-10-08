@@ -12,7 +12,7 @@ Add These lines to current nix config
 environment.systemPackages = with pkgs; [
     stow
     git
-    ];
+];
 ```
 Install with git to home folder
 
