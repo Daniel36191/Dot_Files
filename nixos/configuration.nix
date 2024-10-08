@@ -158,22 +158,30 @@ nerdfonts
 ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+#   programs.mtr.enable = true;
+#   programs.gnupg.agent = {
+#     enable = true;
+#     enableSSHSupport = true;
+#   };
+#   # List services that you want to enable:
+# 
+#  services.openssh = {
+#   enable = true;
+#   ports = [ 8443 ];
+#   settings = {
+#     PasswordAuthentication = true;
+#     AllowUsers = null; # Allows all users by default. Can be [ "user1" "user2" ]
+#     UseDns = true;
+#     X11Forwarding = false;
+#     PermitRootLogin = "prohibit-password"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
+#   };
+# };
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
+  # networking.firewall.allowedTCPPorts = [ 8443 ];
+  # networking.firewall.allowedUDPPorts = [ 8443 ];
   # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+  #networking.firewall.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
