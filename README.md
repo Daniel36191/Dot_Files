@@ -9,5 +9,5 @@ Install with git to home folder
 
 ```bash
 git clone
-./update_git.sh
+./install.sh
 ```
