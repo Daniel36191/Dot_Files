@@ -22,7 +22,6 @@ stow#dot files managment
 catppuccin-cursors.macchiatoDark
 catppuccin-gtk
 nwg-look
-neofetch
 btop
 nerdfonts
 (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
