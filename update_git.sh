@@ -8,7 +8,7 @@ read -p "Commit Message: " commitmessage
 git commit -m "$commitmessage"
 git push origin master
 
-read -p "??? Are You sure [Y/n]? " -n 1
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+read -p "NixOS Rebuild? [Y/n]? " -n 1
+if [[ ! $REPLY =~ ^[Nn]$ ]]; then
 sudo nixos-rebuild switch --flake /etc/nixos#default
 fi
