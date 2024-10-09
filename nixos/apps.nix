@@ -1,5 +1,10 @@
 { config, pkgs, inputs, ... }:
 {
+imports =
+    [
+      ./apps/terminal.nix
+    ];
+
   environment.systemPackages = with pkgs; [
 #Root Apps
 grub2
@@ -8,7 +13,6 @@ polkit_gnome
 
 #System_Apps
 rofi
-kitty
 unzip
 wget
 git

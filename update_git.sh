@@ -7,3 +7,8 @@ git add .
 read -p "Commit Message: " commitmessage
 git commit -m "$commitmessage"
 git push origin master
+
+read -p "Rebuild Nix? [Y/n]" -n 1
+if [[ $REPLY =~ ^[Nn]$ ]]; then
+sudonix
+fi
