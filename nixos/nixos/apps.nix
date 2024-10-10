@@ -1,21 +1,14 @@
 { config, pkgs, inputs, ... }:
 {
-imports =
-    [
-      ./apps/terminal.nix
-    ];
-
   environment.systemPackages = with pkgs; [
 #Root Apps
 grub2
 polkit
 polkit_gnome
 
-#Nixos Apps
-
-
 #System_Apps
 rofi
+kitty
 unzip
 wget
 git
@@ -29,6 +22,7 @@ stow#dot files managment
 catppuccin-cursors.macchiatoDark
 catppuccin-gtk
 nwg-look
+neofetch
 btop
 nerdfonts
 (nerdfonts.override { fonts = [ "CascadiaCode" ]; })

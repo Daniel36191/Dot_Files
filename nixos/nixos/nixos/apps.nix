@@ -11,9 +11,6 @@ grub2
 polkit
 polkit_gnome
 
-#Nixos Apps
-
-
 #System_Apps
 rofi
 unzip

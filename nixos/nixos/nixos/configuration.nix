@@ -9,20 +9,11 @@
     [
       ./hardware-configuration.nix
       ./apps.nix
-      inputs.home-manager.nixosModules.default
       #./vm.nix #Virtual machines
     ];
 
 #Flakes
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-#Home Manager
-home-manager = {
-  specialArgs = { inherit inputs; };
-  users = {
-    "daniel" = import ./home.nix
-  }
-}
 
 #Hyprland
 programs.hyprland.enable = true;
