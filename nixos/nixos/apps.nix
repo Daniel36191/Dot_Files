@@ -72,6 +72,12 @@ spicetify-cli
 vscode
 ];
 
+#Firefox Dissable wayland mode (it caused crashign before)
+environment.sessionVariables.MOZ_ENABLE_WAYLAND = "0";
+
+#Cli prompt
+programs.starship.enable = true;
+
 #Thunar file manager
 programs.thunar = {
   enable = true;

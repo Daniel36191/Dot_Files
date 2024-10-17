@@ -12,7 +12,7 @@
     "height": 0,
 
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
     ],
 
     "modules-center": [
@@ -85,6 +85,5 @@
     "timezones": [
         "America/New_York",
     ]
-}
-
+},
 }
