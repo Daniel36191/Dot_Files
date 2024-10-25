@@ -2,8 +2,9 @@ format = """
 [░▒▓](#89B4FA)\
 [  ](bg:#89B4FA fg:#090c0c)\
 [](bg:#394260 fg:#89B4FA)\
+$nix_shell\
 $directory\
-[](fg:#394260 bg:#394260)\
+[](bg:#394260 fg:#394260)\
 $git_branch\
 $git_status\
 [](fg:#394260 bg:#212736)\
@@ -42,3 +43,7 @@ disabled = false
 time_format = "%I:%M %p" # Hour:Minute Format
 style = "bg:#1d2230"
 format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+
+[nix_shell]
+format = "[](bg:#394260 fg:#a6e22e)"
+style = "bg:#394260"
