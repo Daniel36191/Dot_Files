@@ -26,6 +26,11 @@ mangohud #fps_Overlay
 #Devolpment
 vscode
 
+#Razer
+openrazer-daemon # core
+polychromatic # rgb
+razergenie # Rgb & others
+
 
 ############
 # Non User #
@@ -88,4 +93,8 @@ services.gvfs.enable = true;
     STEAM_EXTRA_COMPAT_TOOLS_PATHS =
       "\${HOME}/.steam/root/compatibilitytools.d";
   };
+
+#Razer support
+hardware.openrazer.enable = true;
+users.users.daniel = { extraGroups = [ "openrazer" ]; };
 }

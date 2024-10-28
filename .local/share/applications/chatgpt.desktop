@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Chat GPT
+Exec=kitty -e nix-shell -p tgpt --run 'function tgpt_prompt() { while true; do read -p ">>> " prompt; [[ "$prompt" == "exit" ]] && break; tgpt "$prompt"; done; }; tgpt_prompt'
+Terminal=true
+Categories=Application
