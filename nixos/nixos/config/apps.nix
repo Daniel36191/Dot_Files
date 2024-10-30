@@ -29,7 +29,6 @@ vscode
 #Razer
 openrazer-daemon # core
 polychromatic # rgb
-razergenie # Rgb & others
 
 
 ############
