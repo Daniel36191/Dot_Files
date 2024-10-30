@@ -15,7 +15,7 @@ virtualisation.libvirtd = {
 
   qemu = {
   ovmf.enable = true;
-  runAsRoot = true; #option has no impact 
+  runAsRoot = true; # ths does noting
   };
 
   #quickfix run hooks manually

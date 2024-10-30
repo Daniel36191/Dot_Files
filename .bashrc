@@ -1,6 +1,6 @@
 #sys shortucts
 alias sudonix='sudo nixos-rebuild switch --flake /etc/nixos#default'
-alias cleannix='sudo nix-collect-garbage -d'
+alias cleanix='sudo nix-collect-garbage -d'
 alias dotbackup='cd ~/dotfiles && ./update_git.sh && cd'
 
 alias neofetch='nix-shell -p fastfetch --run fastfetch'
