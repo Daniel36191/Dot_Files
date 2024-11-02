@@ -41,6 +41,7 @@ catppuccin-gtk
 nwg-look
 neofetch
 btop
+nvitop
 mission-center
 nerdfonts
 (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
