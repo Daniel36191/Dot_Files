@@ -2,31 +2,35 @@
 {
   environment.systemPackages = with pkgs; [
 
-#User_Apps
+# User_Apps
 vesktop
-element-desktop
-obsidian
 librewolf
+
+# Media Editing
 pinta
-xournalpp
 obs-studio
 vlc
 video-trimmer
 
-#Sound
+# Word Editing
+wpsoffice
+xournalpp
+obsidian
+
+# Sound
 qpwgraph
 easyeffects
 rnnoise
 spicetify-cli
 
-#Games
-protonup #Steam_Apps
-mangohud #fps_Overlay
+# Games
+protonup # Steam_Apps
+mangohud # fps_Overlay
 
-#Devolpment
+# Devolpment
 vscode
 
-#Razer
+# Razer
 openrazer-daemon # core
 polychromatic # rgb
 
@@ -35,7 +39,7 @@ polychromatic # rgb
 # Non User #
 ############
 
-#Themeing
+# Themeing
 catppuccin-cursors.macchiatoDark
 catppuccin-gtk
 nwg-look
@@ -46,16 +50,16 @@ mission-center
 nerdfonts
 (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
 
-#Hyprland
+# Hyprland
 hyprcursor
 hyprpaper
 hyprpicker
 waybar
 wev
-dunst #Notifcations
-libnotify #for dunst
+dunst # Notifcations
+libnotify # for dunst
 
-#Clipboard/screenchots
+# Clipboard/screenchots
 wl-clipboard
 cliphist
 grimblast
@@ -67,17 +71,17 @@ slurp
 boot.extraModulePackages = with config.boot.kernelPackages; [ usbip ];
 programs.nix-ld.enable = true;
 
-#Fonts
+# Fonts
 fonts.packages = with pkgs; [
   nerdfonts
 ];
 # Flatpacks
 services.flatpak.enable = true;
 
-#Cli prompt
+# Cli prompt
 programs.starship.enable = true;
 
-#Thunar file manager
+# Thunar file manager
 programs.thunar = {
   enable = true;
   plugins = with pkgs.xfce; [ thunar-archive-plugin thunar-volman ];
@@ -85,7 +89,7 @@ programs.thunar = {
 programs.xfconf.enable = true;
 services.gvfs.enable = true;
 
-#Steam
+# Steam
   programs.steam.enable = true;
   programs.steam.gamescopeSession.enable = true;
   programs.gamemode.enable = true;
@@ -94,7 +98,7 @@ services.gvfs.enable = true;
       "\${HOME}/.steam/root/compatibilitytools.d";
   };
 
-#Razer support
+# Razer support
 hardware.openrazer.enable = true;
 users.users.daniel = { extraGroups = [ "openrazer" ]; };
 }
