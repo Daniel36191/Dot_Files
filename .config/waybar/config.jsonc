@@ -20,7 +20,7 @@
     ],
 
     "modules-right": [
-   
+        //"tray",
         "cpu",
         "memory",
         "disk",
@@ -67,18 +67,16 @@
     "format": " {}%",
     "max-length": 10
     },
-    "custom/menu": {
-        "format": " ",
-        "tooltip": false,
-        "on-click": "networkmanager_dmenu"
-    },
+
 "custom/vpn": {
        "interval": 3,
        "format": "{}",
        "exec": "ip add show | grep -qF tun0 && echo 󱚨 || echo 󰿇",
        "max-length": "100",
+       "on-click": "networkmanager_dmenu"
     },
-    "clock": {
+
+"clock": {
     "format": "{:%I:%M-%p   %a, %b %d}",
     "tooltip-format": "{:%m/%d/%y}
 {tz_list}",
