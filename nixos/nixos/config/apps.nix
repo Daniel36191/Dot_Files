@@ -12,8 +12,7 @@ obs-studio
 vlc
 video-trimmer
 
-# Word Editing
-wpsoffice
+# Word Editings
 xournalpp
 obsidian
 
