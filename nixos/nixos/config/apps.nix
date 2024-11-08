@@ -30,8 +30,8 @@ mangohud # fps_Overlay
 vscode
 
 # Razer
-openrazer-daemon # core
-polychromatic # rgb
+# openrazer-daemon # core
+# polychromatic # rgb
 
 
 ############

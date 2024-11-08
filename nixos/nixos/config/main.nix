@@ -3,9 +3,10 @@
 imports =
   [
     ./apps.nix
-    ./vm.nix #Virtual machines
+    # ./vm.nix #Virtual machines
     # ./vr.nix
     ./ollama.nix
+    ./pipewire.nix
   ];
 
 
