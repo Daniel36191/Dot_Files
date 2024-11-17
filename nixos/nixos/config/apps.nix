@@ -5,6 +5,7 @@
 # User_Apps
 vesktop
 librewolf
+xarchiver
 
 # Media Editing
 pinta
@@ -19,8 +20,14 @@ obsidian
 # Sound
 qpwgraph
 easyeffects
-rnnoise
 spicetify-cli
+pulseaudio
+
+cardinal
+(cardinal.override { libjack2 = pipewire.jack; })
+
+#Bespoke Synth as app immage
+appimage-run
 
 # Games
 protonup # Steam_Apps
@@ -97,7 +104,7 @@ services.gvfs.enable = true;
       "\${HOME}/.steam/root/compatibilitytools.d";
   };
 
-# Razer support
-hardware.openrazer.enable = true;
-users.users.daniel = { extraGroups = [ "openrazer" ]; };
+############
+# Defaults #
+############
 }

@@ -20,7 +20,7 @@
     ],
 
     "modules-right": [
-        //"tray",
+        // "tray",
         "cpu",
         "memory",
         "disk",
@@ -35,6 +35,12 @@
         "icon-size": 22,
     },
 
+    /*
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    */
 
     "hyprland/workspaces": {
         "show-special": true,

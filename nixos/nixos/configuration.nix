@@ -9,6 +9,11 @@
 #Flakes
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+#Envroment Vars
+environment.variables = {
+  QT_QPA_PLATFORMTHEME = "qt5ct"; # For Qt5 themeing
+};
+
 #GreetD
   services.greetd = {
     enable = true;
