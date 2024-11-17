@@ -35,6 +35,7 @@ mangohud # fps_Overlay
 
 # Devolpment
 vscode
+micro
 
 # Razer
 # openrazer-daemon # core
