@@ -1,5 +1,5 @@
 echo "Copying nixconfigs to sys"
-sudo cp -rf /etc/nixos/ ./nixos/
+sudo cp -rf /etc/nixos/ ./nixos-backup/
 echo "Stowing"
 stow .
 echo "Git add"

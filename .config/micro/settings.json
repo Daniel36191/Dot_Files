@@ -1,3 +1,4 @@
 {
-    "colorscheme": "catppuccin-macchiato-transparent"
+    "colorscheme": "catppuccin-macchiato-transparent",
+    "wordwrap": true
 }
