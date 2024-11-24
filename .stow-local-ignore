@@ -28,3 +28,4 @@ install.sh
 
 # Ignore nix configs
 /nixos
+/nixos-backup
