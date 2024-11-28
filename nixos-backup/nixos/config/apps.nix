@@ -6,7 +6,7 @@ let
     owner = "dmoeller131";
     repo = "SendMIDI";
     rev = "main"; # Replace with a specific tag or commit hash
-    sha256 = "1nq242n6s0940r8532p7p53p7db8qdybqj284ia7xnpdc7970qv1"; # Replace with the actual hash
+    sha256 = "BIl2KON5I5hDWZJb0wrm25lCuX+/zJF/34SKnUrvcqU="; # Replace with the actual hash
   }) {
     inherit (pkgs) stdenv lib fetchFromGitHub alsa-lib pkg-config; # Pass all required arguments
   };
@@ -37,6 +37,8 @@ spicetify-cli
 pulseaudio
 sendmidi
 
+#Plugins
+lsp-plugins
 cardinal
 (cardinal.override { libjack2 = pipewire.jack; })
 
@@ -67,7 +69,7 @@ tree
 catppuccin-cursors.macchiatoDark
 catppuccin-gtk
 nwg-look
-neofetch
+fastfetch
 btop
 nvitop
 mission-center
