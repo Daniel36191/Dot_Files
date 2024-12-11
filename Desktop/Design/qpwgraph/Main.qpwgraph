@@ -1,0 +1,86 @@
+<!DOCTYPE patchbay>
+<patchbay name="Main" version="0.7.5">
+ <items>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-3" port="Chromium:output_FR"/>
+   <input node="Sonobus-Input Audio/Sink sink" port="Sonobus-Input Audio/Sink sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Razer Seiren V2 Pro Mono" port="Razer Seiren V2 Pro:capture_MONO"/>
+   <input node="fake-bespoke-source Audio/Source/Virtual sink" port="fake-bespoke-source Audio/Source/Virtual sink:input_3"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Spotify-Input Audio/Sink sink" port="Spotify-Input Audio/Sink sink:monitor_FR"/>
+   <input node="fake-bespoke-source Audio/Source/Virtual sink" port="fake-bespoke-source Audio/Source/Virtual sink:input_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FL"/>
+   <input node="Razer BlackShark V2 Pro Analog Stereo" port="Razer BlackShark V2 Pro:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="fake-bespoke-output Audio/Sink sink" port="fake-bespoke-output Audio/Sink sink:monitor_5"/>
+   <input node="Cardinal" port="Cardinal:audio_in_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="fake-bespoke-output Audio/Sink sink" port="fake-bespoke-output Audio/Sink sink:monitor_4"/>
+   <input node="Cardinal" port="Cardinal:audio_in_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Cardinal" port="Cardinal:audio_out_2"/>
+   <input node="fake-bespoke-source Audio/Source/Virtual sink" port="fake-bespoke-source Audio/Source/Virtual sink:input_5"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Spotify-Input Audio/Source/Virtual sink" port="Spotify-Input Audio/Source/Virtual sink:capture_FR"/>
+   <input node="fake-bespoke-source Audio/Source/Virtual sink" port="fake-bespoke-source Audio/Source/Virtual sink:input_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Sonobus-Output Audio/Source/Virtual sink" port="Sonobus-Output Audio/Source/Virtual sink:capture_MONO"/>
+   <input node="fake-bespoke-source Audio/Source/Virtual sink" port="fake-bespoke-source Audio/Source/Virtual sink:input_3"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FR"/>
+   <input node="Razer BlackShark V2 Pro Analog Stereo" port="Razer BlackShark V2 Pro:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="fake-bespoke-output Audio/Sink sink" port="fake-bespoke-output Audio/Sink sink:monitor_3"/>
+   <input node="Mic-Output Audio/Source/Virtual sink" port="Mic-Output Audio/Source/Virtual sink:input_MONO"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="fake-bespoke-output Audio/Sink sink" port="fake-bespoke-output Audio/Sink sink:monitor_2"/>
+   <input node="Razer BlackShark V2 Pro Analog Stereo" port="Razer BlackShark V2 Pro:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="fake-bespoke-output Audio/Sink sink" port="fake-bespoke-output Audio/Sink sink:monitor_1"/>
+   <input node="Razer BlackShark V2 Pro Analog Stereo" port="Razer BlackShark V2 Pro:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Spotify-Input Audio/Source/Virtual sink" port="Spotify-Input Audio/Source/Virtual sink:capture_FL"/>
+   <input node="fake-bespoke-source Audio/Source/Virtual sink" port="fake-bespoke-source Audio/Source/Virtual sink:input_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Cardinal" port="Cardinal:audio_out_1"/>
+   <input node="fake-bespoke-source Audio/Source/Virtual sink" port="fake-bespoke-source Audio/Source/Virtual sink:input_4"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="fake-bespoke-output Audio/Sink sink" port="fake-bespoke-output Audio/Sink sink:monitor_2"/>
+   <input node="Sonobus-Input Audio/Sink sink" port="Sonobus-Input Audio/Sink sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Spotify-Input Audio/Sink sink" port="Spotify-Input Audio/Sink sink:monitor_FL"/>
+   <input node="fake-bespoke-source Audio/Source/Virtual sink" port="fake-bespoke-source Audio/Source/Virtual sink:input_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-3" port="Chromium:output_FL"/>
+   <input node="Sonobus-Input Audio/Sink sink" port="Sonobus-Input Audio/Sink sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="fake-bespoke-output Audio/Sink sink" port="fake-bespoke-output Audio/Sink sink:monitor_1"/>
+   <input node="Sonobus-Input Audio/Sink sink" port="Sonobus-Input Audio/Sink sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="PipeWire ALSA [sonobus]/ALSA Playback [sonobus]" port="ALSA Playback [sonobus]:output_FR"/>
+   <input node="fake-bespoke-source Audio/Source/Virtual sink" port="fake-bespoke-source Audio/Source/Virtual sink:input_3"/>
+  </item>
+ </items>
+</patchbay>
+

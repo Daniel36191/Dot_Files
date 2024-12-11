@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Bespoke Synth
-Exec=appimage-run ~/Desktop/Design/Bespoke-Synth/App/bespokesynth-nightly-latest-x86_64.AppImage
+Exec=appimage-run ~/Desktop/Design/Bespoke-Synth/App/bespokesynth-nightly-latest-x86_64.AppImage ~/Desktop/Design/Bespoke-Synth/Saves/main.bsk &
 Terminal=false
 Categories=Utility
